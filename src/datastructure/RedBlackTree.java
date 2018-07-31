@@ -2,6 +2,7 @@ package datastructure;
 
 public class RedBlackTree<K, V> {
 
+	@SuppressWarnings("hiding")
 	class Node<K, V> {
 		K key;
 		V value;
@@ -33,6 +34,7 @@ public class RedBlackTree<K, V> {
 		}
 	}
 
+	@SuppressWarnings("unchecked")
 	private void insert(Node<K, V> parent, Node<K, V> node) {
 		if (((Comparable<K>) node.key).compareTo(parent.key) > 0) {
 			if (parent.right == null) {
@@ -69,6 +71,7 @@ public class RedBlackTree<K, V> {
 		return rightheight;
 	}
 
+	@SuppressWarnings("unused")
 	public int blackNodes(Node<K, V> node) {
 		if (node == null)
 			return 1;

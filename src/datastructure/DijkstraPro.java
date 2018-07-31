@@ -87,7 +87,7 @@ public class DijkstraPro {
 				new Edge(n4, 1),
 		};
 
-		Node[] nodes = {n1,n2,n3,n4,n5};
+		//Node[] nodes = {n1,n2,n3,n4,n5};
 
 		//compute paths
 		computePaths(n1);
